@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+	<title>Rest Api</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+
+	var querry = "machine";
+	$.get("/rest/api/?q="+querry,function(data){
+		console.log(data);
+	})
+
+</script>
+</body>
+</html>
